@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(/img/fire-fondo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.titulo-principal {
+    display: flex
+}
+
+.titulo-h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.titulo-h1-part2 {
+    color: green;
+    text-align: center;
+    border-bottom: solid;
+}
+.impacto-msj {
+    
+}
+
+h3 {
+    color: rgb(214, 187, 34);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.subtitulo-h2 {
+    color: rgb(160, 65, 28);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.info {
+    
+}
+
+li{
+    list-style: none;
+}
+
+img {
+    border-radius: 30px;
+    border: 5px solid white;
+
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+footer {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: orange;
+    button-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.quienes-somos {
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
