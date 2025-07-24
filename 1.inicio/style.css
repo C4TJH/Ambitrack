@@ -28,6 +28,7 @@ body {
     color: rgb(255, 255, 255);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
+
 .img-global{
     z-index: 1;
     width: 100vw;
@@ -37,12 +38,13 @@ body {
     background-image: url(/img/fire-fondo.webp);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
+
 .titulo-h1-part2 {
     text-shadow: 0 0 10px rgb(0, 128, 0);
     color: rgb(0, 128, 0);
 }
+
 h3 {
     color: rgb(214, 187, 34);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
@@ -58,6 +60,7 @@ h3 {
     color: rgb(160, 65, 28);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
+
 .lista-para-que{
     gap: 23px;
     display: flex;
