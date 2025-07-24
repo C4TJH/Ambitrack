@@ -1,41 +1,48 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
     margin: 0;
-    padding: 0;
-    background: url(/img/fire-fondo.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    box-sizing: border-box;
 }
 
 .contenedor {
-    width: 80%;
-    margin: auto;
-    margin-top: 40px;
-    border-radius: 10px;
+    max-width: 800px;
+    padding: 0px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-}
-
-.titulo-principal {
-    display: flex
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(100px);
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.712);
+    z-index: 2;
 }
 
 .titulo-h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.img-global{
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background-image: url(/img/fire-fondo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .titulo-h1-part2 {
-    color: green;
-    text-align: center;
-    border-bottom: solid;
-}
-.impacto-msj {
-    
+    text-shadow: 0 0 10px rgb(0, 128, 0);
+    color: rgb(0, 128, 0);
 }
 
 h3 {
@@ -43,30 +50,36 @@ h3 {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
+.titulo-principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .subtitulo-h2 {
     color: rgb(160, 65, 28);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
-.info {
-    
+.lista-para-que{
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
 }
 
-li{
-    list-style: none;
-}
-
-img {
-    border-radius: 30px;
-    border: 5px solid white;
-
-}
-
-.image-section {
+.imagen-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin: 20px 0;
+    img{
+        width: calc(100% - 10px);
+        border-radius: 30px;
+        border: 5px solid white;
+    }
+    h3{
+        text-align: center;
+    }
 }
 
 footer {
@@ -78,10 +91,6 @@ footer {
 
 button {
     background-color: orange;
-    button-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.quienes-somos {
 }
 
 a {
