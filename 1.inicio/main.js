@@ -5,7 +5,6 @@ let editando = -1; // -1 significa que no estamos editando ningún elemento
 function mostrarDatos() {
     const tablaBody = document.querySelector("#listaNombres tbody");
     tablaBody.innerHTML = ""; // Limpiar la tabla antes de renderizar
-
     datos.forEach((item, index) => {
         const row = `
             <tr>
