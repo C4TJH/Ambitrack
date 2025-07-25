@@ -1,82 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AmbiTrack - Tu impacto cuenta. Regístralo. Mejora el planeta.">
-    <meta name="keywords" content="AmbiTrack, cambio climático, sostenibilidad, ecología, medio ambiente">
-    <meta name="author" content="Oscar, Duver, Catalina, Joshua">
-    <link rel="icon" href="/img/icono_ambitrack.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AmbiTrack - Tu impacto cuenta. Regístralo. Mejora el planeta."
+    />
+    <meta
+      name="keywords"
+      content="AmbiTrack, cambio climático, sostenibilidad, ecología, medio ambiente"
+    />
+    <meta name="author" content="Oscar, Duver, Catalina, Joshua" />
+    <link rel="icon" href="/img/icono_ambitrack.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css">
     <title>AmbiTrack</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="img-global"></div>
+    <input type="n" placeholder="" onclick="" />
     <div class="contenedor">
+      <header class="titulo-principal">
+        <h1 class="titulo-h1">
+          Ambi<span class="titulo-h1-part2">Track</span>
+        </h1>
+      </header>
+      <p class="impacto-msj">
+        “Tu impacto cuenta. Regístralo. Mejora el planeta.”
+      </p>
+      <section class="info">
+        <h2 class="subtitulo-h2">Quienes somos</h2>
+        <div class="quienes-somos">
+          <div class="info-quien-somos">
+            <p>
+              Ambitrack es una plataforma creada por jóvenes conscientes del
+              cambio climático. Buscamos ayudar a las personas a registrar sus
+              acciones ecológicas y tomar decisiones más sostenibles en su día a
+              día."
+            </p>
+          </div>
+        </div>
+        <div class="para-que-existe">
+          <div class="para-que">
+            <p>
+              AmbiTrack existe para empoderar a las personas a ser agentes de
+              cambio en la lucha contra el cambio climático. A través de nuestra
+              plataforma, buscamos facilitar el registro y la visualización del
+              impacto ambiental de cada acción, por pequeña que sea.
+            </p>
+          </div>
+        </div>
+        <h2 class="subtitulo-h2">Para que existe AmbiTrack</h2>
+        <ol class="lista-para-que">
+          <li>Proteger los ecosistemas forestales</li>
+          <li>Informar a tiempo sobre amenazas</li>
+          <li>Servir de puente entre observadores, ciudadanos y autoridades</li>
+          <li>Generar datos útiles para prevenir daños mayores</li>
+        </ol>
+      </section>
+      <h2 class="subtitulo-h2">Queremos informar de las siguientes</h2>
+      <section class="section-grid-img">
+        <img
+          src="/img/arbol-caido-en-la-manuela.jpg"
+          alt="arbol-caido-en-la-manuela"
+        />
+        <img src="/img/incendio-forestal.jpg" alt="incendio-forestal" />
+        <img src="/img/tala-de-arboles.jpg" alt="tala-de-arboles" />
+      </section>
+      <section class="section-grud">
+        <h1>Reporta y no te quedes callado</h1>
 
-        <header class="titulo-principal">
-            <h1 class="titulo-h1">Ambi <span class="titulo-h1-part2">Track</span> </h1>
-        </header>
-
-        <p class="impacto-msj">“Tu impacto cuenta. Regístralo. Mejora el planeta.”</p>
-
-        <div class="info">
-
-            <h2 class="subtitulo-h2">Quienes somos</h2>
-
-            <div class="quienes-somos">
-                <div class="info-quien-somos">
-                   <p>Ambitrac es una plataforma creada por jóvenes conscientes del cambio climático. Buscamos ayudar a las personas a registrar sus acciones ecológicas y tomar decisiones más sostenibles en su día a día."</p>
-               </div>
-            </div>
-
-            <div class="para-que-existe">
-                <div class="para-que">
-                    <p>AmbiTrack existe para empoderar a las personas a ser agentes de cambio en la lucha contra el cambio climático. A través de nuestra plataforma, buscamos facilitar el registro y la visualización del impacto ambiental de cada acción, por pequeña que sea.</p>
-                </div>
-            </div>
-
-            <h2 class="subtitulo-h2">Para que existe AmbiTrack</h2>
-            
-            <ol class="lista-para-que">
-                <li>Proteger los ecosistemas forestales</li>
-                <li>Informar a tiempo sobre amenazas</li>
-                <li>Servir de puente entre observadores, ciudadanos y autoridades</li>
-                <li>Generar datos útiles para prevenir daños mayores</li>
+        
+        <div class="crud-form">
+          <input type="text" id="nombre" placeholder="Escribe un nombre" />
+          <input type="text" id="ubicacion" placeholder="Tu ubicación" />
+          <select id="tipoProblema">
+            <option value="">Selecciona un problema</option>
+            <option value="via tapada">Vía tapada</option>
+            <option value="incendio">Incendio</option>
+            <option value="tala de arboles">Tala de árboles</option>
+          </select>
+          <button onclick="agregarNombre()">Enviar Reporte</button>
+        </div>
+        <table id="listaNombres">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Tu ubicación</th>
+              <th>Tipo de Problema</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <a href="">ambitrack@hotmail.com</a>
+          </div>
+          <div class="footer-rigth">
+            <ol class="rigth-ol">
+              <li>
+                <a href="" target="_blank" aria-label="Facebook">Facebook</a>
+              </li>
+              <li>
+                <a href="" target="_blank" aria-label="Instagram">Instagram</a>
+              </li>
+              <li>
+                <a href="" target="_blank" aria-label="Youtube">Youtube</a>
+              </li>
             </ol>
+          </div>
         </div>
-
-
-
-        <h2 class="subtitulo-h2">Queremos informar de las siguientes</h2>
-
-        <div class="imagen-section">
-            <img src="/img/incendio-forestal.jpg" alt="Incendio forestal">
-            <h3>Incendios Forestales</h3>
-            <img src="/img/tala-de-arboles.jpg" alt="Tala de arboles">
-            <h3>Tala de Arboles</h3>
-            <img src="/img/arbol-caido-en-la-manuela.jpg" alt="Arbol caido en la manuela">
-            <h3>Arbol Caido en la Manuela</h3>
-        </div>
-
-        <div class="reporte">
-            <h3>Ha ocurrido algo?</h3>
-            <button><a href="/reporte.html">Enviar Reporte</a></button>
-        </div>
-
-        <footer class="footer">
-            <ul>
-                <li>Contacto:   ambitrack@gmail.com</li>
-            </ul>
-            <ul>
-                <p>Redes Sociales:   </p>
-                <li><a href="https://www.facebook.com/AmbiTrack">Facebook</a></li>
-                <li><a href="https://www.twitter.com/AmbiTrack">Twitter</a></li>
-                <li><a href="https://www.instagram.com/AmbiTrack">Instagram</a></li>
-            </ul>
-         </footer>
-         
-        <p>&copy; 2025 AmbiTrack. Todos los derechos reservados.</p>
+      </footer>
+      <p class="derechos">
+        &copy; 2025 AmbiTrack. Todos los derechos reservados.
+      </p>
     </div>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
